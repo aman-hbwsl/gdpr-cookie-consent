@@ -6613,7 +6613,9 @@ class Gdpr_Cookie_Consent_Admin {
 			$is_cookie_on = true;
 		}
 		$page_view_options = get_option("wpl_page_views");
+		error_log( 'DODODO Page View Options: ' . print_r( $page_view_options, true ) );
 		$total_page_views = get_option("wpl_total_page_views");
+		error_log( 'DODODO Total Page Views: ' . print_r( $total_page_views, true ) );
 		$is_pro_active     = get_option( 'wpl_pro_active' );
 		$api_key_activated = '';
 		$api_key_activated = get_option( 'wc_am_client_wpl_cookie_consent_activated' );

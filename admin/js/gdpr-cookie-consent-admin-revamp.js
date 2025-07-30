@@ -474,6 +474,9 @@ jQuery(document).ready(function () {
       jQuery(".ab_testing-card .gdpr-overlay .api-connect-to-account-btn").on("click", gdprStartAuth);
 
   }
+  window.integrate_cookie_notice_auth = function() {
+    
+  }
   /**
    * start authentication process
    */

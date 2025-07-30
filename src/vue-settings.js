@@ -67,6 +67,7 @@ var gen = new Vue({
       edit_discovered_cookie_on: false,
       cookie_scanner_data: '',
       ab_testing_data: '',
+      cookie_notice_data: '',
       gcm_adver_mode_data: '',
       gcm_scan_flag: false,
       json_templates: settings_obj.templates,
@@ -2285,6 +2286,9 @@ var gen = new Vue({
                     icons: this.$options.icons, // Optionally reuse created lifecycle hook
                 });
             });
+    },
+    refreshCookieNoticeData(html) {
+
     },
     refreshGCMAdvertiserModeData(html) {
       this.gcm_adver_mode_data = html;

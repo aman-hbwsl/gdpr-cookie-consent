@@ -11,12 +11,12 @@ jQuery(document).ready(function ($) {
             if (window.gen && typeof window.gen.refreshABTestingData === 'function') {
                 window.gen.refreshABTestingData(response.data.html);
             } else {
-                console.error('Vue instance not found or refreshCookieScannerData method missing.');
+                console.error('Vue instance not found or refreshABTestingData method missing.');
             }
             setTimeout(function(){window.integrate_ab_testing_auth()},1000);
         },
         error: function () {
-            $abTestingContainer.html('<p>Error loading cookie scanner data.</p>');
+            $abTestingContainer.html('<p>Error loading A/B Testing data.</p>');
         }
     });
 });
